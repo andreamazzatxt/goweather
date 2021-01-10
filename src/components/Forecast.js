@@ -22,7 +22,10 @@ function Forecast(props) {
                     <Icons desc={element.id} size={'2rem'}></Icons>
                     <span className={style.min}>{element.min+'°C '}</span>
                     <span className={style.max}>{element.max+' °C '}</span>
-                    <span className={style.text}>{' | '+element.id}</span>
+                    {
+                       window.innerWidth > 400 &&
+                        <span className={style.text}>{element.id}</span>
+                    }
                         
                    </div>
                 )  

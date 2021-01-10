@@ -1,127 +1,138 @@
-.screen{
-    height: 100vh;
-    width: 100vw;
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: space-around;
+.screen {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
-.card{
-   
-    height: 80vh;
-    width: 80vw;
-    background: rgba(242, 237, 237, 0.089);
-    mix-blend-mode: normal;
-    box-sizing: border-box;
-    box-shadow: 0px 5px 2px rgba(129, 127, 127, 0.4), inset 0px 4px 4px rgba(201, 200, 200, 0.11);
-    backdrop-filter: blur(14px);
-    border-radius: 60px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
+.card {
+  height: 80vh;
+  width: 80vw;
+  background: rgba(242, 237, 237, 0.089);
+  mix-blend-mode: normal;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 2px rgba(129, 127, 127, 0.4),
+    inset 0px 4px 4px rgba(201, 200, 200, 0.11);
+  backdrop-filter: blur(14px);
+  border-radius: 60px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
 }
 
-.title{
-    font-family: 'Rubik', sans-serif;  
-    font-size: 2rem;
-    color:white;
-    align-self: center;
-    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25), inset 0px 1px 4px rgba(0, 0, 0, 0.06);
+.title {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  align-self: center;
+  height: fit-content;
+  width: fit-content;
 }
-.text{
-    font-family: 'Rubik', sans-serif;  
-    font-size: 2rem;
-    color:white;
-    height: 20vh;
-    width: 25vw;
- 
+.text {
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  color: white;
+  height: 20vh;
+  width: 25vw;
 }
-.underline{
-    font-size: 4rem;
-    border-bottom: dotted rgba(169, 237, 191, 0.459) ;
-    border-width: 25px; 
+.underline {
+  font-size: 3rem;
 }
-
-
-.button{
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-    border:none;
-    outline: none;
-    color:rgba(169, 237, 191, 0.459);
-    background: #F4EFEF;
-    border: 1px solid rgba(200, 189, 189, 0.62);
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 1px 4px rgba(0, 0, 0, 0.06);
-    font-size: 3rem;
-    font-weight: 600;
-    position: fixed;
-    top:15%;
-    left: 75%;
-    cursor: pointer;
+.circle {
+  height: 4.2rem;
+  width: 4.2rem;
+  background: rgb(226, 203, 38);
+  background: radial-gradient(
+    circle,
+    rgba(226, 203, 38, 1) 28%,
+    rgba(217, 155, 69, 1) 85%,
+    rgba(255, 255, 255, 1) 99%
+  );
+  border-radius: 50%;
+  position: relative;
+  bottom: 50%;
+  left: 62%;
+  z-index: -1;
+  box-shadow: 0px 5px 10px rgba(255, 136, 0, 0.966);
 }
 
-.form{
-    align-self: center;
-    margin:4rem;
-    border:solid white;
-    border-radius: 2rem;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    height: 3rem;
-    width: 50vw;
-    
-
-
-}
-.input{
-    background-color: transparent;
-    border:none;
-    outline: none;
-    height: 3rem;
-    width: 40vw;
-    font-size: 2rem;
-    text-align: center;
-    color:white;
-
-}
-#iconMag{
-    text-align: center;
-    height: 1rem;
-    font-size: 1rem;
-    color:white;
-    align-self: center;
-}
-.resultBox{
-    align-self: center;
-    background-color: transparent;
-    height: fit-content;
-    width:fit-content;
-    min-width: 80%;
-    min-height: 20%;
-    display:flex;
-    flex-flow: row wrap;
-    align-content: space-around;
-    justify-content: space-around;
-    cursor:pointer;
+.button {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: rgba(169, 237, 191, 0.459);
+  background: #f4efef;
+  border: 1px solid rgba(200, 189, 189, 0.62);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 0px 1px 4px rgba(0, 0, 0, 0.06);
+  font-size: 3rem;
+  font-weight: 600;
+  position: fixed;
+  top: 15%;
+  left: 75%;
+  cursor: pointer;
 }
 
-.miniTile{
-    border: solid white;
-    border-width: 2px;
-    color:white;
-    border-radius: 20px;
-    width: fit-content;
-    height: fit-content;
-    padding:0.3rem;
-    text-align: center;
-
+.form {
+  align-self: center;
+  margin: 4rem;
+  margin-top: 0;
+  border: solid white;
+  border-radius: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  height: 3rem;
+  width: 50vw;
 }
-.miniTile:hover{
-    background-color: rgba(180, 177, 177, 0.5);
+.input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 3rem;
+  width: 30vw;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+#iconMag {
+  text-align: center;
+  height: 1rem;
+  font-size: 1rem;
+  color: white;
+  align-self: center;
+}
+.resultBox {
+  align-self: center;
+  background-color: transparent;
+  height: fit-content;
+  width: fit-content;
+  min-width: 80%;
+  min-height: 20%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.miniTile {
+  border: solid white;
+  border-width: 2px;
+  color: white;
+  border-radius: 20px;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.3rem;
+  text-align: center;
+}
+.miniTile:hover {
+  background-color: rgba(180, 177, 177, 0.5);
 }
